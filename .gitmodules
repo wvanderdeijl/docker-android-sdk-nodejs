@@ -1,0 +1,3 @@
+[submodule "docker-android-sdk"]
+	path = docker-android-sdk
+	url = https://github.com/mindrunner/docker-android-sdk.git
