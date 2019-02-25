@@ -5,15 +5,7 @@
 # see https://hub.docker.com/_/node/
 FROM node:10
 
-# get openjdk on older debian version used by node container
-# see https://xmoexdev.com/wordpress/installing-openjdk-8-debian-jessie/
-
-RUN echo deb http://http.debian.net/debian jessie-backports main >> /etc/apt/sources.list && \
-  apt-get update && \
-  apt-get install -y -t jessie-backports openjdk-8-jdk && \
-  apt-get clean
-
-# now add Android SDK
+# add Android SDK
 # see https://github.com/mindrunner/docker-android-sdk
 # see https://hub.docker.com/r/runmymind/docker-android-sdk
 
